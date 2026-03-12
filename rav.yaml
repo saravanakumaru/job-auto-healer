@@ -1,0 +1,3 @@
+scripts:
+  install: source job-auto-healer/bin/activate && uv pip install -r requirements.txt
+  runserver: PYTHONPATH=. uvicorn src.basic-rest-file:app --reload
